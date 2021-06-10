@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stock_ui/pages/home_page.dart';
+import 'package:stock_ui/pages/home_stock_socket.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: HomeStockSocket(title: 'title'),
     );
   }
 }

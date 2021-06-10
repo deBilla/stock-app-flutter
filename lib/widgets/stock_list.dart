@@ -12,7 +12,7 @@ class StockList extends StatelessWidget {
       separatorBuilder: (context, index) {
         return Divider(color: Colors.grey[400]);
       },
-      itemCount: stocks.length,
+      itemCount: stocks != null ? stocks.length : 0,
       itemBuilder: (context, index) {
         final stock = stocks[index];
         bool isChgNegative = true;

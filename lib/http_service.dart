@@ -10,7 +10,6 @@ class HttpService {
 
     if (res.statusCode == 200) {
       final obj = jsonDecode(res.body);
-      print(obj['stock'][0]['symbol']);
       List<Stock> stocks =  new List<Stock>();
 
       for (int i = 0; i < obj['stock'].length; i++) {
