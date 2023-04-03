@@ -3,7 +3,7 @@ import 'package:http/http.dart';
 import 'package:stock_ui/models/stock.dart';
 
 class HttpService {
-  final String stockURL = "http://localhost:8080/getStock";
+  final String stockURL = "https://yahoo-stock-ws.onrender.com/getStock";
 
   Future<List<Stock>> getStocks() async {
     Response res = await get(Uri.parse(stockURL));

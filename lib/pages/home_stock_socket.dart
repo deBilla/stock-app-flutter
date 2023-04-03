@@ -18,7 +18,7 @@ class HomeStockSocket extends StatefulWidget {
 
 class _MyHomePageState extends State<HomeStockSocket> {
   StompClient stompClient;
-  final socketUrl = 'http://localhost:8080/ws-message';
+  final socketUrl = 'https://yahoo-stock-ws.onrender.com/ws-message';
 
   String message = '';
   List<Stock> stockList;
